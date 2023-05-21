@@ -5,7 +5,6 @@ public class SnakeLadder {
     {
         int currentPosition = 10,Position=0;
         int dice=(int)(Math.random()*6+1);
-
         int Options = (int) ((Math.random() * 10) %3);
 
         switch (Options) {
