@@ -23,7 +23,6 @@ public class SnakeLadder {
                     Position-=dice;
 
             }
-
             if (Position < 0) {
                 Position = 0;
             }else if (Position > winningPosition) {
