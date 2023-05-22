@@ -1,14 +1,13 @@
 package com.Bridgelabz;
 
 public class SnakeLadder {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int Position = 0;
         int winningPosition=100;
-        for(Position=0;Position<=winningPosition;Position++)
-        {
+        int Diceroll=0;
+        for(Position=0;Position<=winningPosition;Position++){
             int dice=(int)(Math.random()*6+1);
-
+            Diceroll++;
             int Options = (int)((Math.random() * 10)%3);
 
             switch (Options) {
@@ -22,11 +21,16 @@ public class SnakeLadder {
                 default:
                     System.out.println("Snake");
                     Position-=dice;
+
             }
-            if (Position < 0)
-            {
+
+            if (Position < 0) {
                 Position = 0;
+            }else if (Position > winningPosition) {
+                Position -= dice;
             }
+
+            System.out.println("Number of times the dice was played : "+Diceroll);
             System.out.println("CurrentPosition : "+Position);
         }
         System.out.println("Player has reached the winning position" +winningPosition);
