@@ -5,7 +5,8 @@ public class SnakeLadder {
     {
         int Position = 0;
         int winningPosition=100;
-        for(Position=0;Position<=winningPosition;Position++){
+        for(Position=0;Position<=winningPosition;Position++)
+        {
             int dice=(int)(Math.random()*6+1);
 
             int Options = (int)((Math.random() * 10)%3);
@@ -21,9 +22,9 @@ public class SnakeLadder {
                 default:
                     System.out.println("Snake");
                     Position-=dice;
-
             }
-            if (Position < 0) {
+            if (Position < 0)
+            {
                 Position = 0;
             }
             System.out.println("CurrentPosition : "+Position);
