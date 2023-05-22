@@ -76,7 +76,6 @@ public class SnakeLadder {
                     continue;
                 }
             }
-
             player1Turn = !player1Turn;
         }
 
