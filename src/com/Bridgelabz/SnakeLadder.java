@@ -21,7 +21,6 @@ public class SnakeLadder {
                 default:
                     System.out.println("Snake");
                     Position-=dice;
-
             }
             if (Position < 0) {
                 Position = 0;
