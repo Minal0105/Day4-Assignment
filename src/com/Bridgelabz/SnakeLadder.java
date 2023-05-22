@@ -21,12 +21,10 @@ public class SnakeLadder {
                 default:
                     System.out.println("Snake");
                     Position-=dice;
+
             }
             if (Position < 0) {
                 Position = 0;
-            }
-            else if (Position > winningPosition) {
-                Position -= dice;
             }
             System.out.println("CurrentPosition : "+Position);
         }
